@@ -11,12 +11,12 @@ def index():
     return "Hello HBNB!"
 
 
-@app.route("/hbnb")
+@app.route("/hbnb", strict_slashes=False)
 def HBNB():
     return "HBNB"
 
 
-@app.route("/c/<text>")
+@app.route("/c/<text>", strict_slashes=False)
 def c(text):
     text = text.replace("_", " ")
     return ('C %s' % text)
