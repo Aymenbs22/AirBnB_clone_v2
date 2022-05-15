@@ -23,7 +23,7 @@ def c(text):
 
 
 @app.route("/python/(<text>)")
-def pyt(text):
+def pyt(text="is cool"):
     text = text.replace("_", " ")
     return ('Python %s' % text)
 
