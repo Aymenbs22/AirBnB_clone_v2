@@ -31,7 +31,7 @@ def python(text="is cool"):
 
 @app.route("/number/<int:n>", strict_slashes=False)
 def python(n):
-    return ('Python %s' % n)
+    return ('%s is a number' % n)
 
 
 if __name__ == "__main__":
